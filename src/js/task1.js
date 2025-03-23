@@ -28,10 +28,10 @@ document.addEventListener("keydown", (event) => {
     if (event.key === keys[keyIndex]) {
         keyIndex = getRandomKeyIndex();
         keyElement.textContent = keys[keyIndex];
-        const successMessage = success({ text: "Правильно!", delay: 200 });
+        const successMessage = success({ text: "Правильно!", delay: 300 });
         updateCount(++count);
     } else {
-      const errorMessage = error({text: "Натиснуто неправильну клавішу!", delay: 200});
+      const errorMessage = error({text: "Натиснуто неправильну клавішу!", delay: 300});
     }
 });
 
